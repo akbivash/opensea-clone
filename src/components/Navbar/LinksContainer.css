@@ -1,0 +1,98 @@
+
+
+.navlinks_container .links li{
+    list-style: none;
+    padding: 1rem;
+display: none;
+
+}
+
+.nav_right{
+    display: flex;
+    gap: 2rem;
+}
+
+.icons{
+    display: flex;
+    gap: 1rem;
+}
+.icons li{
+    list-style: none;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+.icons .wallet, .icons .user{
+    display: none;
+}
+.navbar_mobile{
+position: absolute;
+width: 100%;
+z-index: 99;
+background: #fff;
+border-radius: 10px;
+padding: 1rem;
+left: 0;
+overflow-y: hidden;
+/* height: 100vh; */
+/* position: fixed; */
+}
+.main_links_container{
+    position: relative;
+  display: grid;
+  gap: 2rem;
+  margin-top: 18vh;
+  width: 100%;
+
+}
+
+.connect_wallet{
+    background: var(--primary);
+    color: #fff;
+    padding: 10px ;
+  border-radius: 10px;
+  margin: 0 1rem;
+
+    /* width: 70%; */
+    text-align: center;
+}
+
+
+.main_links_container .main_links span i{
+    margin-right: 1rem;
+}
+
+.main_links_container .main_links li{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 1rem;
+ transition: .3s;
+ cursor: pointer;
+}
+.social_links{
+    text-align: center;
+}
+.main_links_container .social_links li{
+    display: inline;
+    margin: 0 1rem;
+}
+.main_links_container .main_links li:hover{
+   background: #ddd;
+    transition: .3s ease;
+    padding-left: 2rem;
+  
+}
+
+@media screen and (min-width:1000px) {
+    .icons .wallet, .icons .user{
+        display: block;
+    }
+}
+@media screen and (min-width:1200px) {
+    .navlinks_container .links li{
+        display: inline;
+    }
+    .bars{
+        display: none;
+    }
+}
